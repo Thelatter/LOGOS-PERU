@@ -1,0 +1,104 @@
+/*PRIMERA SECCION*/
+.sect-contacto{
+    background-image: url(../../../../public/img/contacto/bannercontacto.jpg); 
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.height{
+    height: 100%;
+}
+.align-items-center{
+    align-items: center;
+}
+.contacto-text1{
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 32px;
+    margin: 0px;
+    letter-spacing: 0px;
+}
+.contacto-text2{
+    font-weight: 700;
+    font-style: normal;
+    color: #edea2a;
+    font-size: 50px;
+    line-height: 1.3;
+    letter-spacing: 0px;
+}
+@media(max-width: 539px){
+    .contacto-text1{
+        font-size: 20px;
+    }
+    .contacto-text2{
+        font-size: 30px;
+    }
+}
+/*SEGUNDA SECCION*/
+.sect-contacto2{
+    width: 100%;
+    padding: 40px;
+    background-image: url(../../../../public/img/nosotros/pared-amarilla.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seccion-contenedor{
+    padding: 20px 0px;
+}
+.seccion-contenedor a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.seccion-contenedor span{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    color: #272b2d;
+}
+.seccion-contenedor .content{
+    padding-left: 60px;
+}
+.seccion-contenedor .content h5{
+    color: #272b2d;
+    font-size: 18px;
+    font-weight: 700;
+}
+.seccion-contenedor .content h6{
+    color: #272b2d;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*TERCERA SECCION*/
+.sect-contacto3{
+    padding: 50px 0px;
+}
+.imput-color{
+    box-shadow: none;
+    background: #f2f2f2;
+    border: 1px solid #bdbdbd;
+}
+.btn-orange{
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid;
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+}
+.btn-orange:hover{
+    color: #ffffff;
+    background-color: #1b232e;
+    border-color: #1b232e;
+    text-decoration: none;
+}

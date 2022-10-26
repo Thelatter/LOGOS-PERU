@@ -1,0 +1,494 @@
+
+/* FORM MATERIALIZE */
+.mate-frm{
+    position: relative;
+}
+
+.mate-frm .form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    border: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.mate-frm .form-control:focus{
+    box-shadow: inherit;
+}
+
+.mate-frm .form-control.textarea-form{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    border: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding-left: 0;
+    resize: none;
+}
+/**/
+.mate-frm .form-group{
+    margin-top: 15px;
+}
+/**/
+.mate-frm .mat-forms{
+    margin-left: 50px;
+    position: relative;
+}
+/**/
+.mate-frm .form-group .form-line {
+    position: relative;
+    border-bottom: 1px solid #00b0e5;
+}
+
+.mate-frm .form-group .form-line:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    bottom: -1px;
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -moz-transition: 0.25s ease-in;
+    -o-transition: 0.25s ease-in;
+    -webkit-transition: 0.25s ease-in;
+    transition: 0.25s ease-in;
+    border-bottom: 2px solid #a9d500;
+}
+
+.mate-frm .form-group .form-line.focused:after {
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.mate-frm .form-group .form-line .form-label {
+    font-weight: normal;
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    cursor: text;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.mate-frm .form-group .form-line.focused .form-label {
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: #00b0e5;
+}
+/**/
+.mate-frm .mateicon1{
+    position: absolute;
+    width: 40px;
+    font-size: 36px;
+    transition: color .2s;
+    color: #1e1e1e;
+}
+
+.mate-frm .form-i.imat-focus .mateicon1{
+    color: #a9d500;
+}
+
+/*MODAL COTIZA 1*/
+#cotiza1.modal,
+#cotiza2.modal,
+#cotiza3.modal{
+    max-height: 100% !important;
+    margin: 30px auto !important;
+}
+#cotiza1 .modal-content,
+#cotiza2 .modal-content,
+#cotiza3 .modal-content{
+  padding: 0 !important;
+}
+#cotiza1 .modal-body{
+  padding: 20px;
+}
+
+#cotiza1 .modal-header,
+#cotiza3 .modal-header{
+  background: #e60268;
+  color: #fff;
+}
+
+#cotiza1 .modal-header h1,
+#cotiza2 .modal-header h1,
+#cotiza3 .modal-header h1{
+  margin-bottom: 0;
+  font-size: 25px;
+}
+#cotiza1 .prefix,
+#cotiza3 .prefix{
+  color: #e60268
+}
+
+.body_cotizar input:not([type]):focus:not([readonly]),
+.body_cotizar input[type=text]:focus:not([readonly]),
+.body_cotizar input[type=password]:focus:not([readonly]), 
+.body_cotizar input[type=email]:focus:not([readonly]), 
+.body_cotizar input[type=url]:focus:not([readonly]), 
+.body_cotizar input[type=time]:focus:not([readonly]), 
+.body_cotizar input[type=date]:focus:not([readonly]), 
+.body_cotizar input[type=datetime]:focus:not([readonly]), 
+.body_cotizar input[type=datetime-local]:focus:not([readonly]), 
+.body_cotizar input[type=tel]:focus:not([readonly]), 
+.body_cotizar input[type=number]:focus:not([readonly]), 
+.body_cotizar input[type=search]:focus:not([readonly]), 
+.body_cotizar textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #e60268;
+    box-shadow: 0 1px 0 0 #e60268;
+}
+
+.body_cotizar input:not([type]):focus:not([readonly]) + label,
+.body_cotizar input[type=text]:focus:not([readonly]) + label,
+.body_cotizar input[type=password]:focus:not([readonly]) + label,
+.body_cotizar input[type=email]:focus:not([readonly]) + label,
+.body_cotizar input[type=url]:focus:not([readonly]) + label,
+.body_cotizar input[type=time]:focus:not([readonly]) + label,
+.body_cotizar input[type=date]:focus:not([readonly]) + label,
+.body_cotizar input[type=datetime]:focus:not([readonly]) + label,
+.body_cotizar input[type=datetime-local]:focus:not([readonly]) + label,
+.body_cotizar input[type=tel]:focus:not([readonly]) + label,
+.body_cotizar input[type=number]:focus:not([readonly]) + label,
+.body_cotizar input[type=search]:focus:not([readonly]) + label,
+.body_cotizar textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #e60268;
+}
+
+#cotiza2 .modal-header{
+  background: #57abdd;
+  color: #fff;
+}
+
+.body_cotizar2 input:not([type]):focus:not([readonly]),
+.body_cotizar2 input[type=text]:focus:not([readonly]),
+.body_cotizar2 input[type=password]:focus:not([readonly]), 
+.body_cotizar2 input[type=email]:focus:not([readonly]), 
+.body_cotizar2 input[type=url]:focus:not([readonly]), 
+.body_cotizar2 input[type=time]:focus:not([readonly]), 
+.body_cotizar2 input[type=date]:focus:not([readonly]), 
+.body_cotizar2 input[type=datetime]:focus:not([readonly]), 
+.body_cotizar2 input[type=datetime-local]:focus:not([readonly]), 
+.body_cotizar2 input[type=tel]:focus:not([readonly]), 
+.body_cotizar2 input[type=number]:focus:not([readonly]), 
+.body_cotizar2 input[type=search]:focus:not([readonly]), 
+.body_cotizar2 textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #57abdd;
+    box-shadow: 0 1px 0 0 #57abdd;
+}
+
+.body_cotizar2 input:not([type]):focus:not([readonly]) + label,
+.body_cotizar2 input[type=text]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=password]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=email]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=url]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=time]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=date]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=datetime]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=datetime-local]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=tel]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=number]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=search]:focus:not([readonly]) + label,
+.body_cotizar2 textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #57abdd;
+}
+
+.body_cotizar2 .bot-send {
+    background-color: #57abdd;
+}
+.body_cotizar2 .bot-send:hover,
+.body_cotizar2 .bot-send:active,
+.body_cotizar2 .bot-send:focus {
+    background-color: #57abdd;
+}
+#cotiza2 .prefix{
+  color: #57abdd
+}
+
+@media(max-width: 767px){
+  #cotiza1 .modal-header h1,
+  #cotiza2 .modal-header h1,
+  #cotiza3 .modal-header h1 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  #cotiza1 .modal-header img,
+  #cotiza2 .modal-header img,
+  #cotiza3 .modal-header img{
+    width: 30px !important;
+  }
+  #cotiza1 .modal-header a,
+  #cotiza2 .modal-header a,
+  #cotiza3 .modal-header a{
+    top: 13px !important;
+  }
+}
+
+/*MODAL PLANES LOGOTIPO*/
+#pexpress.modal,
+#pempresa.modal,
+#pcorpo.modal{
+    /* overflow-x: hidden; */
+    overflow-y: auto !important;
+}
+#pexpress .modal-content,
+#pempresa .modal-content,
+#pcorpo .modal-content{
+  padding: 0 !important;
+}
+#pexpress .modal-body{
+  padding: 20px;
+}
+
+#pexpress .modal-header{
+  background: #6dbc00;
+  color: #fff;
+}
+
+#pcorpo .modal-header{
+  background: #ff0000;
+  color: #fff;
+}
+
+#pexpress .modal-header h1,
+#pempresa .modal-header h1,
+#pcorpo .modal-header h1{
+  margin-bottom: 0;
+  font-size: 25px;
+}
+#pexpress .prefix,
+#pcorpo .prefix{
+  color: #e60268
+}
+
+.body_cotizar input:not([type]):focus:not([readonly]),
+.body_cotizar input[type=text]:focus:not([readonly]),
+.body_cotizar input[type=password]:focus:not([readonly]), 
+.body_cotizar input[type=email]:focus:not([readonly]), 
+.body_cotizar input[type=url]:focus:not([readonly]), 
+.body_cotizar input[type=time]:focus:not([readonly]), 
+.body_cotizar input[type=date]:focus:not([readonly]), 
+.body_cotizar input[type=datetime]:focus:not([readonly]), 
+.body_cotizar input[type=datetime-local]:focus:not([readonly]), 
+.body_cotizar input[type=tel]:focus:not([readonly]), 
+.body_cotizar input[type=number]:focus:not([readonly]), 
+.body_cotizar input[type=search]:focus:not([readonly]), 
+.body_cotizar textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #e60268;
+    box-shadow: 0 1px 0 0 #e60268;
+}
+
+.body_cotizar input:not([type]):focus:not([readonly]) + label,
+.body_cotizar input[type=text]:focus:not([readonly]) + label,
+.body_cotizar input[type=password]:focus:not([readonly]) + label,
+.body_cotizar input[type=email]:focus:not([readonly]) + label,
+.body_cotizar input[type=url]:focus:not([readonly]) + label,
+.body_cotizar input[type=time]:focus:not([readonly]) + label,
+.body_cotizar input[type=date]:focus:not([readonly]) + label,
+.body_cotizar input[type=datetime]:focus:not([readonly]) + label,
+.body_cotizar input[type=datetime-local]:focus:not([readonly]) + label,
+.body_cotizar input[type=tel]:focus:not([readonly]) + label,
+.body_cotizar input[type=number]:focus:not([readonly]) + label,
+.body_cotizar input[type=search]:focus:not([readonly]) + label,
+.body_cotizar textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #e60268;
+}
+
+#pempresa .modal-header{
+  background: #e91e63;
+  color: #fff;
+}
+
+.body_cotizar2 input:not([type]):focus:not([readonly]),
+.body_cotizar2 input[type=text]:focus:not([readonly]),
+.body_cotizar2 input[type=password]:focus:not([readonly]), 
+.body_cotizar2 input[type=email]:focus:not([readonly]), 
+.body_cotizar2 input[type=url]:focus:not([readonly]), 
+.body_cotizar2 input[type=time]:focus:not([readonly]), 
+.body_cotizar2 input[type=date]:focus:not([readonly]), 
+.body_cotizar2 input[type=datetime]:focus:not([readonly]), 
+.body_cotizar2 input[type=datetime-local]:focus:not([readonly]), 
+.body_cotizar2 input[type=tel]:focus:not([readonly]), 
+.body_cotizar2 input[type=number]:focus:not([readonly]), 
+.body_cotizar2 input[type=search]:focus:not([readonly]), 
+.body_cotizar2 textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #57abdd;
+    box-shadow: 0 1px 0 0 #57abdd;
+}
+
+.body_cotizar2 input:not([type]):focus:not([readonly]) + label,
+.body_cotizar2 input[type=text]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=password]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=email]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=url]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=time]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=date]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=datetime]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=datetime-local]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=tel]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=number]:focus:not([readonly]) + label,
+.body_cotizar2 input[type=search]:focus:not([readonly]) + label,
+.body_cotizar2 textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #57abdd;
+}
+
+.body_cotizar2 .bot-send {
+    background-color: #57abdd;
+}
+.body_cotizar2 .bot-send:hover,
+.body_cotizar2 .bot-send:active,
+.body_cotizar2 .bot-send:focus {
+    background-color: #57abdd;
+}
+#pempresa .prefix{
+  color: #57abdd
+}
+
+@media(max-width: 767px){
+  #pexpress .modal-header h1,
+  #pempresa .modal-header h1,
+  #pcorpo .modal-header h1 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  #pexpress .modal-header img,
+  #pempresa .modal-header img,
+  #pcorpo .modal-header img{
+    width: 30px !important;
+  }
+  #pexpress .modal-header a,
+  #pempresa .modal-header a,
+  #pcorpo .modal-header a{
+    top: 13px !important;
+  }
+}
+
+
+
+
+#pcorpo .btn_enviar{
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    background: #f00;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    transition: all ease 500ms;
+}
+#pcorpo .btn_enviar:hover{
+    background: transparent;
+    color: #f00;
+    font-weight: 700;
+    transition: all ease 500ms;
+}
+.close{
+    color: #fff;
+    opacity: 1;
+    font-size: 40px;
+    margin-top: 11px;
+}
+
+
+
+#pexpress .btn_enviar{
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    background: #6dbc00;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #6dbc00;
+    border-radius: 10px;
+    transition: all ease 500ms;
+}
+#pexpress .btn_enviar:hover{
+    background: transparent;
+    color: #6dbc00;
+    font-weight: 700;
+    transition: all ease 500ms;
+}
+
+#pempresa .btn_enviar{
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    background: #e91e63;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 10px;
+    transition: all ease 500ms;
+}
+#pempresa .btn_enviar:hover{
+    background: transparent;
+    color: #e91e63;
+    font-weight: 700;
+    transition: all ease 500ms;
+}
+
+#peconomic .btn_enviar{
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    background: #0071bc;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #0071bc;
+    border-radius: 10px;
+    transition: all ease 500ms;
+}
+#peconomic .btn_enviar:hover{
+    background: transparent;
+    color: #0071bc;
+    font-weight: 700;
+    transition: all ease 500ms;
+}
